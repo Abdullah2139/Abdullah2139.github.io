@@ -1,3 +1,7 @@
+// Keep the footer's copyright year current automatically.
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
 // Nav highlight + gentle scroll-reveal for each section.
 const sections = document.querySelectorAll('.stage');
 const navLinks = document.querySelectorAll('.topnav-links a');
